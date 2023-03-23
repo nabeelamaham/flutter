@@ -15,12 +15,15 @@ class Home extends StatelessWidget{
       backgroundColor: Colors.red[600],
       ),
       body: Center(
-      child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmkwYbPm-neI63boKZ1YJ81175mtbxOBdwA&usqp=CAU'),
+      child:Icon(
+        Icons.airport_shuttle,
+        color:Colors.cyanAccent,
+        size:50.0,
+      )
 
-      //Image.asset("assets/space-1.jpg"),
-
-    /* Image(
-
+      /*Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmkwYbPm-neI63boKZ1YJ81175mtbxOBdwA&usqp=CAU'),
+      Image.asset("assets/space-1.jpg"),
+     Image(
         image: AssetImage('assets/space-1.jpeg'),
         image: NetworkImage(
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmkwYbPm-neI63boKZ1YJ81175mtbxOBdwA&usqp=CAU'),
