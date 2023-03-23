@@ -15,7 +15,9 @@ class Home extends StatelessWidget{
       backgroundColor: Colors.red[600],
       ),
       body: Center(
-      child: Image.asset("assets/space-1.jpg"),
+      child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmkwYbPm-neI63boKZ1YJ81175mtbxOBdwA&usqp=CAU'),
+
+      //Image.asset("assets/space-1.jpg"),
 
     /* Image(
 
