@@ -16,15 +16,17 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.red[600],
         ),
         body: Center(
-          child: TextButton(
-            style: TextButton.styleFrom(
-              primary: Colors.amber,
-              onSurface: Colors.amberAccent,
-            ),
-            onPressed: () {},
-            child: Text('Click me'),
+            child: TextButton(
+          style: TextButton.styleFrom(
+            primary: Colors.pinkAccent,
+            backgroundColor: Colors.amberAccent,
+            onSurface: Colors.amberAccent,
           ),
-        ),
+          onPressed: () {
+            print('you clicked me');
+          },
+          child: Text('Click me'),
+        )),
 
         /*Icon(
         Icons.airport_shuttle,
