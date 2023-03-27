@@ -16,7 +16,7 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.red[600],
         ),
         body: Center(
-          child: ElevatedButton(
+          child: TextButton(
             style: TextButton.styleFrom(
               primary: Colors.amber,
               onSurface: Colors.amberAccent,
@@ -31,14 +31,6 @@ class Home extends StatelessWidget {
         color:Colors.cyanAccent,
         size:50.0,
       )*/
-
-        /*Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmkwYbPm-neI63boKZ1YJ81175mtbxOBdwA&usqp=CAU'),
-      Image.asset("assets/space-1.jpg"),
-     Image(
-        image: AssetImage('assets/space-1.jpeg'),
-        image: NetworkImage(
-            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmkwYbPm-neI63boKZ1YJ81175mtbxOBdwA&usqp=CAU'),
-    ) */
 
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
