@@ -1,42 +1,49 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/material/floating_action_button.dart';
+import 'package:scoffold_appbar_widgets/main.dart';
 
 void main() => runApp(MaterialApp(
-  //home: Text('Hey Nabeela'),
-  home: Home()));
+    //home: Text('Hey Nabeela'),
+    home: Home()));
 
-class Home extends StatelessWidget{
+class Home extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-      title: Text('my first app'),
-      centerTitle: true,
-      backgroundColor: Colors.red[600],
-      ),
-      body: Center(
-      child:Icon(
+        appBar: AppBar(
+          title: Text('my first app'),
+          centerTitle: true,
+          backgroundColor: Colors.red[600],
+        ),
+        body: Center(
+          child: ElevatedButton(
+            style: TextButton.styleFrom(
+              primary: Colors.amber,
+              onSurface: Colors.amberAccent,
+            ),
+            onPressed: () {},
+            child: Text('Click me'),
+          ),
+        ),
+
+        /*Icon(
         Icons.airport_shuttle,
         color:Colors.cyanAccent,
         size:50.0,
-      )
+      )*/
 
-      /*Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmkwYbPm-neI63boKZ1YJ81175mtbxOBdwA&usqp=CAU'),
+        /*Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmkwYbPm-neI63boKZ1YJ81175mtbxOBdwA&usqp=CAU'),
       Image.asset("assets/space-1.jpg"),
      Image(
         image: AssetImage('assets/space-1.jpeg'),
         image: NetworkImage(
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmkwYbPm-neI63boKZ1YJ81175mtbxOBdwA&usqp=CAU'),
-    ) */ ),
+    ) */
 
-      floatingActionButton: FloatingActionButton(
-      onPressed: () {},
-      child: Text('Click'),
-      backgroundColor: Colors.red[600],
-      )
-
-      );
-
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Text('Click'),
+          backgroundColor: Colors.red[600],
+        ));
   }
-
 }
