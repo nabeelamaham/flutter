@@ -16,7 +16,16 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.red[600],
         ),
         body: Center(
-          child: ElevatedButton.icon(
+          child: IconButton(
+            onPressed: () {
+              print('you clicked me');
+            },
+            icon: Icon(Icons.alternate_email),
+            color: Colors.amber,
+          ),
+        ),
+
+        /*   child: ElevatedButton.icon(
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.amberAccent,
             ),
@@ -25,6 +34,8 @@ class Home extends StatelessWidget {
             label: Text('mail me'),
           ),
         ),
+
+        */
         /* child: TextButton(
           style: TextButton.styleFrom(
             primary: Colors.pinkAccent,
