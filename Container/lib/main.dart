@@ -14,7 +14,9 @@ class Home extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.red[600],
         ),
-        body: Row(
+        body:
+
+       Row(
           mainAxisAlignment: MainAxisAlignment.center,
           /*
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -59,6 +61,8 @@ class Home extends StatelessWidget {
           child: Text('hello Nabeela '),
         ),
 */
+
+
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: Text('Click'),
