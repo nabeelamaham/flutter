@@ -16,7 +16,16 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.red[600],
         ),
         body: Center(
-            child: TextButton(
+          child: ElevatedButton.icon(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.amberAccent,
+            ),
+            onPressed: () {},
+            icon: Icon(Icons.mail),
+            label: Text('mail me'),
+          ),
+        ),
+        /* child: TextButton(
           style: TextButton.styleFrom(
             primary: Colors.pinkAccent,
             backgroundColor: Colors.amberAccent,
@@ -27,7 +36,7 @@ class Home extends StatelessWidget {
           },
           child: Text('Click me'),
         )),
-
+*/
         /*Icon(
         Icons.airport_shuttle,
         color:Colors.cyanAccent,
