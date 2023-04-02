@@ -28,10 +28,15 @@ class Home extends StatelessWidget {
                 ),
               ],
             ),
-            Container(
-              padding: const EdgeInsets.all(30.0),
-              color: Colors.pinkAccent,
-              child: const Text('two'),
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Container(
+                  padding: const EdgeInsets.all(30.0),
+                  color: Colors.pinkAccent,
+                  child: const Text('two'),
+                ),
+              ),
             ),
             Container(
               padding: const EdgeInsets.all(40.0),
