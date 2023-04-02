@@ -16,23 +16,28 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.red[600],
         ),
         body:Row(
-          mainAxisAlignment: MainAxisAlignment.end,
-          crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
-            Container(
-              padding: const EdgeInsets.all(30.0),
-              color: Colors.pinkAccent,
-              child: const Text('two'),
+
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(30.0),
+                color: Colors.amber,
+                child: const Text('three'),
+              ),
             ),
-            Container(
-              padding: const EdgeInsets.all(30.0),
-              color: Colors.amber,
-              child: const Text('three'),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(30.0),
+                color: Colors.pinkAccent,
+                child: const Text('two'),
+              ),
             ),
-            Container(
-              padding: const EdgeInsets.all(30.0),
-              color: Colors.cyan,
-              child: const Text('one'),
+            Expanded(
+              child: Container(
+                padding: const EdgeInsets.all(30.0),
+                color: Colors.cyan,
+                child: const Text('one'),
+              ),
             ),
           ],
         ),
