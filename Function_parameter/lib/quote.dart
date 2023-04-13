@@ -27,7 +27,7 @@ Quote myquote = Quote(text:'this is the quote text', author: 'oscar wilde');
 
 */
 //Method 3
-import 'package:function_as_parameter/quote_card.dart';
+
 class Quote {
   String text;
   String author;
