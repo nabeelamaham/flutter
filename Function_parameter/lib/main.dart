@@ -8,11 +8,10 @@ void main() => runApp(const MaterialApp(
 
 class QuoteList extends StatefulWidget{
   const QuoteList({super.key});
-
   @override
   _QuoteListState createState() => _QuoteListState();
 }
-int MahamLevel=0;
+//int MahamLevel=0;
 class _QuoteListState extends State<QuoteList>
 {
   //Method 1
@@ -21,28 +20,30 @@ class _QuoteListState extends State<QuoteList>
     Quote(author: 'Oscar Wilde', text: 'tomorrow will be worse'),
     Quote(author: 'Oscar Wilde', text: 'but the day after tomorrow will be sunshine')
   ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[400],
+      backgroundColor: Colors.grey[200],
       appBar: AppBar(
         title: Text('Awesome Quotes'),
         centerTitle: true,
         backgroundColor: Colors.redAccent,
       ),
+    body: Column(
+    children: quotes.map((quote) => QuoteCard(
+    quote: quote,
+    delete: ()  {
+     setState(() {
+         quotes.remove(quote);
 
-      body: Column(
-        children: quotes.map((quote) => QuoteCard(
-            quote: quote,
-            delete: () {
-              setState(() {
-                quotes.remove(quote);
-              });
-        }
-        )).toList(),
-      ),
+       });
+      }
+    )).toList(),
+    ),
 
     );
   }
 }
+
+
+
